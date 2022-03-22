@@ -23,8 +23,8 @@ You use this code to test this trading strategy and produce similar micro & macr
 **To do so:
 
 <ul>
-<li>First, download your candidate stock daily data of the pre-defined period from ["Yahoo Finance"](https://finance.yahoo.com/quote/TSLA/history?p=TSLA)</li>
-<li>Next, download your daily macro-variable data of the pre-defined period from ["FRED"](https://fred.stlouisfed.org/series/DCOILBRENTEU)</li>
+<li>First, download your candidate stock daily data of the pre-defined period from ["Yahoo Finance"](https://finance.yahoo.com/quote/TSLA/history?p=TSLA) </li>
+<li>Next, download your daily macro-variable data of the pre-defined period from ["FRED"](https://fred.stlouisfed.org/series/DCOILBRENTEU) </li>
 <li>Make sure to change variable names in the code to match the new data sets file names.</li>
 <li>Note that you must choose the type of ARIMA model selected in the regression based on the ACF & PACF plots.</li>    
 </ul>
