@@ -29,8 +29,9 @@ You use this code to test this trading strategy and produce similar micro & macr
 3. Make sure to change variable names in the code to match the new data sets file names.
 4. Note that you must choose the type of ARIMA model selected in the regression based on the ACF & PACF plots.
 5. Install required libraries before running the code by typing the following command in your terminal, ```Python
-pip install -r requirements.txt
-```
+pip install -r requirements.txt```
+5. You can run ```Python jupyter nbconvert --to markdown --execute jubyter-notebook.ipynb``` to export your output to a markdown file.
+
 
 ### Project findings and analysis
 

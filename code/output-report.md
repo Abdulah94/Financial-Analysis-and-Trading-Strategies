@@ -41,7 +41,7 @@ def import_cvs_as_dataframe(stock):
     return df
 ```
 
-### Micro-level analysis and Fast & Slow signals trading strategy 
+## Micro-level analysis and Fast & Slow signals trading strategy 
 
 
 ```python
@@ -138,7 +138,7 @@ def plot_Log_Return(df1, df2, df3, header1, header2, header3):
     return plt.show()
 ```
 
-### Value at Risk (VaR) analysis
+## Value at Risk (VaR) analysis
 
 
 ```python
@@ -280,24 +280,24 @@ Calculating_value_at_risk(tsla, nvda, xom, "Tesla", "NVIDIA", "Exxon Mobil")
 ![png](jubyter-notebook_files/jubyter-notebook_19_0.png)
     
 
-
+This figure shows the daily closing prices for Tesla, NVIDIA, and Exxon Mobil over the period, giving an overview that allows the comparison of the three stocks together. We can see that from the beginning of the year 2020, Tesla and NVIDIA exhibited an upward trend, while Exxon Mobil were not showing any obvious trend.
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_1.png)
     
 
+These subplots allow the visualization and the comparison of the daily open and close prices, for each of the three stocks individually. We can see that, they are very close to each other, which means, when the stock opens on an increase, it is expected to close on an increase as well and vice versa. That's because news about companies often come out while the market is closed. This indicates that, buying and selling on the same day might not be profitable.
 
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_2.png)
     
-
+These subplots show the daily volume traded for each of the three stocks individually. Visualizing volume helps traders making better decisions. They can look at this from different aspects, for example, many prefer high volume rather than low volume. That is because, they have higher buyers and sellers, which allows easier trading. 
 
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_3.png)
     
-
 
 
     
@@ -310,7 +310,7 @@ Calculating_value_at_risk(tsla, nvda, xom, "Tesla", "NVIDIA", "Exxon Mobil")
 ![png](jubyter-notebook_files/jubyter-notebook_19_5.png)
     
 
-
+The three plots above shows the fast and slow trading strategy in practice, when the 7-day moving is above the 40-day moving average it's a buy signal, and when it drops below it's a sell signal.
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_6.png)
@@ -328,7 +328,7 @@ Calculating_value_at_risk(tsla, nvda, xom, "Tesla", "NVIDIA", "Exxon Mobil")
 ![png](jubyter-notebook_files/jubyter-notebook_19_8.png)
     
 
-
+The three plots above illustrates the profits and loss from following this strategy, as it shows the daily profit above the red line and the daily losses below it.
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_9.png)
@@ -346,12 +346,12 @@ Calculating_value_at_risk(tsla, nvda, xom, "Tesla", "NVIDIA", "Exxon Mobil")
 ![png](jubyter-notebook_files/jubyter-notebook_19_11.png)
     
 
-
+The plots above illustrates the accumilated net profit from following this strategy, as we can see Tesla have produced the largest amount of profits.
 
     
 ![png](jubyter-notebook_files/jubyter-notebook_19_12.png)
     
-
+The above subplots show histograms of the daily log returns for each of the three stocks individually. We can see that, each histogram is almost symmetric, and bell shaped, which means, they are very similar to normal distribution. Therefore, we can model the daily log returns using normal distribution. 
 
     VAR for Tesla
     5% quantile  -0.06653962651049658
@@ -369,6 +369,7 @@ Calculating_value_at_risk(tsla, nvda, xom, "Tesla", "NVIDIA", "Exxon Mobil")
     25% quantile  -0.015369337797380932
     75% quantile  0.01564792349597372
 
+In this section we calculated the value at risk (VAR) for the 5%, 95%, 25%, and 75% quantiles using “norm.ppf” from “scipy” package, where “ppf” stands for percent point function. This helps estimating the probability of the daily return. For instance, we can see that, the 5% quantile for tesla is (-0.0665), which means, there is a 5% chance that, the daily return is worse than negative 6.65%.
 
 ## Macro-level analysis
 
