@@ -35,13 +35,3 @@ pip install -r requirements.txt```
 
 ### Project findings and analysis
 
-##### Macro analysis
-We get the result that SP500 and oil price rise steadily before the pandemic, but then drop rapidly until May 2020, and then continue to rise. On the other hand, we can see that after the pandemic, the stock prices of these two high-tech companies(TSLA, NVDA) have soared. We conduct in-depth research on the impact of the pandemic on enterprises’ stocks.
-
-Firstly, we use ARMA (3,3) model to analyze the effect of autocorrelation for different stock’s closed price, then we find their first-order lag autoregressive coefficients are close to 1, it is totally likely that they have unit roots, then I regress the GROWTH RATE	of two stock prices for that of SP500 and oil price, since stock prices might not be affected by oil price and SP500 immediately, I estimate these two variables could have same lag effects on stock price(5 orders), in this case, I assume the lag effect of oil price and SP 500 about five backward periods to stock prices. 
-
-Then we use the augmented Dickey-Fuller test to test whether the regression’s residuals have a unit root, and according to the result, there indeed exists the unit root, or we can’t reject the null hypothesis. Then we get the conclusion that the growth rate of NVDA and TSLA's stock price, oil price, SP500 are cointegrated. 
-
-We also found an interesting thing: the growth rate of the stock has a noticeable lagged reflection to that of oil prices and SP500, since we can clearly see that the coefficients in the second-order, third order, fourth-order are much higher and statistically significant than first order, we can estimate the growth rate of stock price need some time to make any adjustment.
-
-
