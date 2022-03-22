@@ -12,3 +12,23 @@ Then, moving to the macro analysis part, we will conduct a thorough time series 
 In this part, we'll start by doing fundamental statistic analysis and visualization of before & after the pandemic, then we'll analyze the effect of changes in oil prices and S&P500 on selected stocks. To do so, we plot the ACF & PACF to help in model selection. After the regression, we use the augmented Dicky-Fuller test to check for unit roots and cointegration.
 
 
+### Data sets
+
+In this analysis, we used daily data for stocks from ["Yahoo Finance"](https://finance.yahoo.com/quote/TSLA/history?p=TSLA) and daily macro-variables data (Oil Prices and S&P500) from ["FRED"](https://fred.stlouisfed.org/series/DCOILBRENTEU) for the period starting from January 2019 up to February 2022.
+
+### Reproducibility
+
+You use this code to test this trading strategy and produce similar micro & macro analysis and visualization, using any stock or macro-variable that comes to mind.
+
+**To do so:
+
+<ul>
+<li>First, download your candidate stock daily data of the pre-defined period from ["Yahoo Finance"](https://finance.yahoo.com/quote/TSLA/history?p=TSLA)</li>
+<li>Next, download your daily macro-variable data of the pre-defined period from ["FRED"](https://fred.stlouisfed.org/series/DCOILBRENTEU)</li>
+<li>Make sure to change variable names in the code to match the new data sets file names.</li>
+<li>Note that you must choose the type of ARIMA model selected in the regression based on the ACF & PACF plots.</li>    
+</ul>
+
+### Project findings and analysis
+
+
